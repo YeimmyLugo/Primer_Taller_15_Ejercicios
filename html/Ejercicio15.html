@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--Centro de Biotecnologia Agropecuaria
+Análisis y Desarrollo de Software
+FICHA: 2470980
+Autor: Yeimmy Katherine lugo Mora
+Fecha de creación: 16 de Febrero de 2022
+Fecha de actualización: 22 de febrero de 2022-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon"
+        href="https://64.media.tumblr.com/e7dae07a288ba41bdf0ca4b76c9b9615/tumblr_oz2ofmrxh41u3owddo1_1280.png">
+    <link rel="stylesheet" href="../css/Ejercicio15.Css">
+</head>
+
+<body>
+    <div id="container">
+        <h3 class="lua">Información sobre el producto</h3>
+        <form action="/php/insertar_subasta.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="lua">Datos básicos</legend>
+                <label for="nombre" class="lua1">Nombre</label><br />
+                <input type="text" name="nombre" id="nombre" size="50" maxlength="250" />
+                <br /><br />
+                <label for="descrpcion" class="lua2">Descripción</label><br />
+                <textarea name="descrpcion" id="descripcion" cols="40" rows="5"></textarea>
+                <br /><br />
+                Foto<input type="file" name="foto" />
+                <br /><br />
+                <input name="contador" type="checkbox" value="si" /> Añadir contador de visitas
+            </fieldset>
+            <fieldset>
+                <legend class="lua3">Datos económicos</legend>
+                <label for="precio" class="lua4">Precio</label>
+                <input type="text" size="5" id="precio" name="precio" />&euro;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="impuestos" class="lua5">Impuestos</label>
+                <select id="impuestos" name="impuestos">
+                    <option value="4" class="lua6">4%</option>
+                    <option value="7" class="lua7">7%</option>
+                    <option value="16" class="lua8">16%</option>
+                    <option value="25" class="lua9">25%</option>
+                </select>
+                <br /><br />
+                <label class="lua">Promoción</label><br />
+                <input type="radio" name="promocion" value="ninguno" checked="checked" /> Ninguno<br />
+                <input type="radio" name="promocion" value="portes" /> Transporte gratuito<br />
+                <input type="radio" name="promocion" value="descuento" />Descuento 5%
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+<!--las etiquetas h3 fueron utilizadas para representar un segundo subtitulo-->
+<!--el elemento form junto con el atributo action fueron utilizados para definir la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan-->
+<!--el atributo fieldset fu utilizado para permite organizar en grupos los campos de un formulario-->
+<!--el elemento legend fie utilizado para crear un título para los campos-->
+<!--el atributo label for fue utilizado para indicar el identificador (atributo id ) del campo de formulario para el que esta etiqueta hace de título-->
+<!--el atributo textarea fue utilizado para representar un control para la edición mutilínea de texto sin formato-->
+<!--la etiqueta br/ fue utilizada para dar un salto de pagina-->
+<!--el atributo input type fue utilizado para representar un item en una etiqueta select-->
+<!--los atributos size fueron utilizados para definir el tamaño de letra-->
+<!--los atributos maxlength fueron utilizados para especificar la longitud máxima del valor que se puede introducir-->
+<!--el atributo rows se utilizo para definir el número de subespacios horizontales (filas)-->
+<!--el atributo cols se utilizo para definir el número de subespacios verticales (columnass)-->
+<!--los atributos checked fueron utilizados para indicar que el elemento está seleccionado-->
+<!--los atributos value se utilizaron para definir el valor enviado por el checkbox-->
+<!--el elemento select fue utilizado para representar un control que muestra un menú de opciones.-->
+<!--class: es utilizada para seleccionar y acceder a elementos específicos par aportar diseño de css a ese elemento-->
+<!--Div junto con el id container: es un elemento contenedor que se utiliza para dar diseño de css a ciertos elementos que este contenga-->

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--Centro de Biotecnologia Agropecuaria
+Análisis y Desarrollo de Software
+FICHA: 2470980
+Autor: Yeimmy Katherine lugo Mora
+Fecha de creación: 16 de Febrero de 2022
+Fecha de actualización: 22 de febrero de 2022-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://pm1.narvii.com/6518/c28fa567b4cab7830d48da9f59676a9c3c584360_hq.jpg">
+    <link rel="stylesheet" href="../css/Ejercicio14.Css">
+</head>
+
+<body>
+    <div id="container">
+        <h3 class="lua">Rellena tu CV</h3>
+        <form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="lua">Datos personales</legend>
+                <label for="Provincia" class="lua">provincia</label><br />
+                <select id="provincia" name="provincia">
+                    <option value="01" class="lua1">Álava/Araba</option>
+                    <option value="02" class="lua1">Albacete</option>
+                    <option value="03" class="lua1">Alicante/Alacant</option>
+                    <option value="04" class="lua1">Almería</option>
+                    <option value="33" class="lua1">Asturias</option>
+                    <option value="05" class="lua1">Ávila</option>
+                    <option value="06" class="lua2">Badajoz</option>
+                    <option value="07" class="lua2">Balears(illes)</option>
+                    <option value="08" class="lua2">Barcelona</option>
+                    <option value="09" class="lua2">Burgos</option>
+                    <option value="10" class="lua3">cáceres</option>
+                    <option value="11" class="lua3">Cádiz</option>
+                    <option value="39" class="lua3">Cantabria</option>
+                    <option value="12" class="lua3">Castellón</option>
+                    <option value="51" class="lua3">Ceuta</option>
+                    <option value="13" class="lua3">Ciudad Real</option>
+                    <option value="14" class="lua3">Córdoba</option>
+                    <option value="15" class="lua3">Coruña(A)</option>
+                    <option value="16" class="lua3">Cuenca</option>
+                    <option value="17" class="lua4">Girona</option>
+                    <option value="18" class="lua4">Granada</option>
+                    <option value="19" class="lua4">Guadalajara</option>
+                    <option value="20" class="lua4">Guipúzcoa/Gipuzkoa</option>
+                    <option value="21" class="lua5">Huelva</option>
+                    <option value="22" class="lua5">Huesca</option>
+                    <option value="23" class="lua6">Jaén</option>
+                    <option value="24" class="lua7">León</option>
+                    <option value="27" class="lua7">Lugo</option>
+                    <option value="25" class="lua7">Lleida</option>
+                    <option value="28" class="lua8">Madrid</option>
+                    <option value="29" class="lua8">Málaga</option>
+                    <option value="52" class="lua8">Melilla</option>
+                    <option value="30" class="lua8">Murcia</option>
+                    <option value="31" class="lua9">Navarra</option>
+                    <option value="32" class="lua10">Ourense</option>
+                    <option value="34" class="lua11">Palencia</option>
+                    <option value="35" class="lua11">Palmas(Las)</option>
+                    <option value="36" class="lua11">Pontevedra</option>
+                    <option value="26" class="lua11">Rioja(La)</option>
+                    <option value="37" class="lua12">Salamanca</option>
+                    <option value="38" class="lua12">Santa cruz de Tenerife</option>
+                    <option value="40" class="lua12">Segovia</option>
+                    <option value="41" class="lua12">Sevilla</option>
+                    <option value="42" class="lua12">Soria</option>
+                    <option value="43" class="lua13">Tarragona</option>
+                    <option value="44" class="lua13">Teruel</option>
+                    <option value="45" class="lua13">Toledo</option>
+                    <option value="46" class="lua14">Valencia</option>
+                    <option value="47" class="lua14">Valladolid</option>
+                    <option value="48" class="lua14">vizcaya</option>
+                    <option value="49" class="lua15">Zamora</option>
+                    <option value="50" class="lua15">Zaragoza</option>
+                </select>
+                <br /><br />
+                <label for="fecha_dia" class="lua">Fecha de nacimiento</label><br />
+                <input type="text" size="3" maxlength="2" id="fecha_dia" name="fecha_dia" />
+                de
+                <select id="fecha_mes" name="fecha_mes">
+                    <option value="1" class="lua1">Enero</option>
+                    <option value="2" class="lua2">Febrero</option>
+                    <option value="3" class="lua3">Marzo</option>
+                    <option value="4" class="lua4">Abril</option>
+                    <option value="5" class="lua5">Mayo</option>
+                    <option value="6" class="lua6">Junio</option>
+                    <option value="7" class="lua7">Julio</option>
+                    <option value="8" class="lua8">Agosto</option>
+                    <option value="9" class="lua9">Septiembre</option>
+                    <option value="10" class="lua10">Octubre</option>
+                    <option value="11" class="lua11">Noviembre</option>
+                    <option value="12" class="lua12">Diciembre</option>
+                </select>
+                de
+                <input type="text" size="5" maxlength="4" id="fecha_ano" name="fecha_ano" />
+                <br /><br />
+                <label for="Temasdeinteres" class="lua">Temas de interés</label><br />
+                <select multiple="multiple" size="5" id="temasdeinteres" name="temasdeinteres">
+                    <option value="3105" class="lua1">Administración de bases de datos</option>
+                    <option value="3106" class="lua2">Análisis y programación</option>
+                    <option value="3107" class="lua3">Arquitectura</option>
+                    <option value="3108" class="lua4">Calidad</option>
+                    <option value="3109" class="lua5">ERP, CRM, Business Intelligence</option>
+                    <option value="3110" class="lua6">Gestión de proyectos</option>
+                    <option value="3111" class="lua7">Hardware, redes y seguridad</option>
+                    <option value="3112" class="lua8">Helpdesk</option>
+                    <option value="3113" class="lua9">Sistemas</option>
+                    <option value="3114" class="lua10">Telecomunicaciones</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+<!--la etiqueta h3 fue utilizada para representar un sub titulo-->
+<!--la etiqueta form con el atributo action fueron utilizados para define la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan-->
+<!--el atributo method define con qué método HTTP se envían los datos-->
+<!--el atributo enctype fue utilizado para especificar el formulario antes de enviar los datos al servidor de la forma en que se codifican-->
+<!--el atributo fieldset fu utilizado para permite organizar en grupos los campos de un formulario-->
+<!--el elemento legend fie utilizado para crear un título para los campos-->
+<!--el atributo label for fue utilizado para indicar el identificador (atributo id ) del campo de formulario para el que esta etiqueta hace de título-->
+<!--el elemento select fue utilizado para representar un control que muestra un menú de opciones.-->
+<!--el atributo name fue utilizado para permitir acceder al contenido-->
+<!--el atributo option value fue utilizado para definr el valor enviado por el checkbox-->
+<!--la etiqueta br fue utilizada para dar un salto de pagina-->
+<!--el atributo input type fue utilizado para representar un item en una etiqueta select-->
+<!--los atributos maxlength fueron utilizados para especificar la longitud máxima del valor que se puede introducir-->
+<!--los atributos size fueron utilizados para definir el tamaño de letra-->
+<!--el atributo id fue utilizado para define un identificador único (ID) el cual no debe repetirse en todo el documento-->
+<!--la etiqueta junto con el atributo multiple fue utilizada para representar un control para seleccionar cero o más opciones de la lista-->
+<!--class: es utilizada para seleccionar y acceder a elementos específicos par aportar diseño de css a ese elemento-->
+<!--Div junto con el id container: es un elemento contenedor que se utiliza para dar diseño de css a ciertos elementos que este contenga-->
